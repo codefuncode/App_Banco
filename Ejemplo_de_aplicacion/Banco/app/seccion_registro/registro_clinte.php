@@ -3,12 +3,7 @@
     <div class="">
       <div class="">
         <div class="w3-container">
-          <h2 class="w3-text-blue">
-            Registro manual del cliente
-          </h2>
-          <p>
-            Registro de clientes autorizado  para representantes de servicio
-          </p>
+
           <div class="w3-row">
             <div class="w3-col" style="width:45%">
               <p>
@@ -72,7 +67,7 @@
                 <input class="w3-input w3-border" name="id_pais" type="text"/>
               </p> -->
               <p>
-                <select class="w3-select" name="id_pais">
+                <select class="w3-select w3-border" name="id_pais">
                   <option disabled="" selected="" value="">
                     Choose your option
                   </option>
@@ -102,7 +97,7 @@
                 <input class="w3-input w3-border" name="id_pueblo" type="text"/>
               </p> -->
               <p>
-                <select class="w3-select" name="option">
+                <select class="w3-select w3-border" name="option">
                   <option disabled="" selected="" value="">
                     Choose your option
                   </option>

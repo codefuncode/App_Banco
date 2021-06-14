@@ -11,3 +11,26 @@ if (isset($_POST['nombre_pais']) && $_POST["nombre_pais"] != "") {
     echo json_encode($respuesta);
 }
 
+
+<?php
+$sql = "SELECT COUNT(*) FROM fruit WHERE calories > 100";
+if ($resultado = $conexión->query($sql)) {
+
+    /* Comprobar el número de filas que coinciden con la sentencia SELECT */
+  if ($resultado->fetchColumn() > 0) {
+
+        /* Ejecutar la sentencia SELECT real y trabajar con los resultados */
+         $sql = "SELECT name FROM fruit WHERE calories > 100";
+       foreach ($conexión->query($sql) as $fila) {
+           print "Nombre: " .  $fila['NAME'] . "\n";
+         }
+    }
+    /* No coincide ningua fila -- hacer algo en consecuencia */
+  else {
+      print "Ninguna fila coincide con la consulta.";
+    }
+}
+
+$resultado = null;
+$conexión = null;
+?>

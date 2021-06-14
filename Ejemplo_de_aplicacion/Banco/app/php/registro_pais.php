@@ -6,7 +6,7 @@ if (isset($_POST['nombre_pais']) && $_POST["nombre_pais"] != "") {
     // regular pata manejar el dato.
     $pais = $_POST['nombre_pais'];
     // Se incluyen los datos de conexión a la base de
-    include_once "../coneccion/coneccion.php";
+    include_once "../conexion/conexion.php";
 
     try {
 
@@ -22,7 +22,7 @@ if (isset($_POST['nombre_pais']) && $_POST["nombre_pais"] != "") {
         //  Consulta para seleccionar el dato  que vamos a insertar y determinar si existe o no  para tomar una decisión.
         $stmt_seleccion = $conn->prepare(
             "SELECT * FROM pais
-            WHERE nombre_pais= :nombre_pais"
+			WHERE nombre_pais= :nombre_pais"
         );
 
         $stmt_seleccion->bindParam(
@@ -42,7 +42,7 @@ if (isset($_POST['nombre_pais']) && $_POST["nombre_pais"] != "") {
             $stmt_insercion =
             $conn->prepare(
                 "INSERT INTO pais (nombre_pais)
-                VALUES (:nombre_pais)"
+				VALUES (:nombre_pais)"
             );
 
             $stmt_insercion->bindParam(

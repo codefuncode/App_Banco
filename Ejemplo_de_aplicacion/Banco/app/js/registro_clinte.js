@@ -1,3 +1,3 @@
 function registro_clinte(argument) {
-	console.log("ok");
+	console.log("registro_clinte");
 }

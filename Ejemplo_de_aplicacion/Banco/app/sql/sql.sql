@@ -83,6 +83,14 @@ CREATE TABLE estado_targeta(
 
 
 
+CREATE TABLE tipo_transacuion(
+    id_tipo_transacuion
+    pago INT NOT NULL,
+    depopsito VARCHAR() NOT NULL,
+    transferencia DATE NOT NULL;
+
+
+    
 -- CREATE TABLE tipo_transacuion(
 --     id_tipo_transacuion
 --     pago INT NOT NULL,

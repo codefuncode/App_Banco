@@ -1,3 +1,6 @@
- fichero agencia folmulario de datos 
+ Fichero agencia formulario de datos 
 
- Edicion tabla agencia
+ Edición tabla agencia
+
+
+ Verificar consulta  de inserción de pueblos datos duplicados

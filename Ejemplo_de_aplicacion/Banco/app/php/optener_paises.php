@@ -2,7 +2,7 @@
 
 if (isset($_POST['func']) && $_POST["func"] == "todo") {
     try {
-        include_once "../coneccion/coneccion.php";
+        include_once "../conexion/conexion.php";
         $conn =
         new PDO(
             "mysql:host=$servername;dbname=$dbname",
@@ -14,7 +14,7 @@ if (isset($_POST['func']) && $_POST["func"] == "todo") {
             PDO::ERRMODE_EXCEPTION);
 
         $stmt = $conn->prepare(
-            "SELECT * FROM pais"
+            "SELECT * FROM pais ORDER BY nombre_pais"
         );
         $stmt->execute();
 

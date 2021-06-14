@@ -3,3 +3,6 @@ sudo /opt/lampp/lampp start
 
 Linux Preguntas frecuentes
 https://www.apachefriends.org/es/faq_linux.html
+
+
+
