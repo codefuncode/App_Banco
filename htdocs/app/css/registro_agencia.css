@@ -1,0 +1,7 @@
+.textarea_registro_agencia {
+   resize: none;
+   width: 100%;
+   height: 400px;
+   padding: 10px;
+   border: 1px solid black;
+}

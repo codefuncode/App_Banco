@@ -1,0 +1,171 @@
+Como extraer datos específicos de una tabla HTML con JavaScript 
+
+
+En esta ocasión le muestro los pasos necesarios para que obtengas una matriz  con todos los valores que necesitas de una tabla HTML, ya que cuando intentamos copiar con el ratón todos los valores de las celdas se seleccionan automáticamente. ¿No queremos eso verdad? Solo queremos seleccionar la comuna  con los datos que necesitamos para trabajar. Para esto debemos tener claro como funcionan los selectores CSS para así indicar a JavaScript que queremos que seleccione solo eso y nada más que eso. Entonces JavaScript lo hará por ti, seleccionará específicamente todos los elementos que le indiques, después debes capturar el valor dentro de este nodo y limpiarlo con la función trim() de JavaScript. Una vez tengamos eso realizado procedemos a agregarlo a una matriz. DE hecho esta matriz la mostramos en consola y es complicado para copiar todos los resultados. Entonces puedes usar la función JSON.stringify() para convertirlo en un objeto de JSON, el mismo no tendrá llaves  pues se basa en un objeto con valores únicos  y sus llaves son implícitas [1,2,3.....] y así sucesivamente. 
+
+
+Vemos unas imagenes y el codigo fuente para que puedas hacerlo tu mismo. 
+
+
+Para esto nos dirijimos a wikipedioa  donde nos proveen un listado de los munipcipios dela republica de santo docmjingo
+
+
+
+Altamira
+Arenoso
+Azua
+Baitoa
+Baní
+Bánica
+Barahona
+Bayaguana
+Boca Chica
+Bohechío
+Bonao
+Cabral
+Cabrera
+Cambita Garabitos
+Castañuelas
+Castillo
+Cayetano Germosén
+Cevicos
+Comendador
+Constanza
+Consuelo
+Cotuí
+Cristóbal
+Dajabón
+Duvergé
+El Cercado
+El Factor
+El Llano
+El Peñón
+El Pino
+El Seibo
+El Valle
+Enriquillo
+Esperanza
+Estebanía
+Fantino
+Fundación
+Galván
+Gaspar Hernández
+Guananico
+Guayabal
+Guayacanes
+Guaymate
+Guayubín
+Haina
+Hato Mayor
+Higüey
+Hondo Valle
+Hostos
+Imbert
+Jamao Al Norte
+Jánico
+Jaquimeyes
+Jarabacoa
+Jima Abajo
+Jimaní
+Juan de Herrera
+Juan Santiago
+La Ciénaga
+La Descubierta
+La Mata
+La Romana
+La Vega
+Laguna Salada
+Las Charcas
+Las Guáranas
+Las Matas de Farfán
+Las Matas de Santa Cruz
+Las Salinas
+Las Terrenas
+Las Yayas de Viajama
+Licey al Medio
+Loma de Cabrera
+Los Alcarrizos
+Los Cacaos
+Los Hidalgos
+Los Llanos
+Los Ríos
+Luperón
+Maimón
+Mao
+Matanzas
+Mella
+Miches
+Moca
+Monción
+Monte Cristi
+Monte Plata
+Nagua
+Neiba
+Nigua
+Nizao
+Oviedo
+Padre Las Casas
+Paraíso
+Partido
+Pedernales
+Pedro Brand
+Pedro Santana
+Pepillo Salcedo
+Peralta
+Peralvillo
+Piedra Blanca
+Pimentel
+Polo
+Postrer Río
+Pueblo Viejo
+Puerto Plata
+Puñal
+Quisqueya
+Ramón Santana
+Rancho Arriba
+Restauración
+Río San Juan
+Sabana de la Mar
+Sabana Grande de Boyá
+Sabana Grande de Palenque
+Sabana Iglesia
+Sabana Larga
+Sabana Yegua
+Sabaneta
+Salcedo
+Samaná
+San Antonio de Guerra
+San Cristóbal
+San Francisco de Macorís
+San José de las Matas
+San José de Ocoa
+San Juan
+San Pedro de Macorís
+San Rafael del Yuma
+San Víctor
+Sánchez
+Santiago de los Caballeros
+Santo Domingo
+Santo Domingo Este
+Santo Domingo Norte
+Santo Domingo Oeste
+Sosúa
+Tábara Arriba
+Tamayo
+Tamboril
+Tenares
+Vallejuelo
+Vicente Noble
+Villa Altagracia
+Villa Bisonó
+Villa González
+Villa Hermosa
+Villa Isabela
+Villa Jaragua
+Villa Los Almácigos
+Villa Montellano
+Villa Riva
+Villa Tapia
+Villa Vásquez
+Yaguate
+Yamasá
