@@ -14,7 +14,7 @@
                      Nombre de la agencia
                   </b>
                </label>
-               <input class="w3-input w3-border" name="nombre_cliente" type="text"/>
+               <input class="w3-input w3-border" name="nombre_agencia" type="text"/>
             </p>
             <p>
                <label class="w3-text-blue">
@@ -49,10 +49,10 @@
                   </b>
                </label>
                <select class="w3-select" name="option">
-                  <option disabled="" selected="" value="">
+                  <option disabled="" selected="" value="Selecciona un pueblo">
                      Selecciona un pueblo
                   </option>
-                  <option value="1">
+                  <!--     <option value="1">
                      Option 1
                   </option>
                   <option value="2">
@@ -60,7 +60,7 @@
                   </option>
                   <option value="3">
                      Option 3
-                  </option>
+                  </option> -->
                </select>
             </p>
             <p>
@@ -74,7 +74,7 @@
                      Saldo inicial del agencia
                   </b>
                </label>
-               <input class="w3-input w3-border" name="nombre_cliente" type="number"/>
+               <input class="w3-input w3-border" name="saldo_inicial" type="number"/>
             </p>
          </div>
          <div class="w3-col" style="width:5%">
@@ -93,6 +93,13 @@
                </textarea>
             </p>
          </div>
+      </div>
+      <div class="">
+         <p>
+            <button class="w3-button w3-light-green btn_registrar_agencia">
+               Registrar
+            </button>
+         </p>
       </div>
    </div>
 </div>

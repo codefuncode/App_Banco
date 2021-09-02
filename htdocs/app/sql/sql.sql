@@ -27,7 +27,7 @@ CREATE TABLE depositos(
     PRIMARY KEY (id_deposito)
     );
 
-CREATE TABLE agegencia(
+CREATE TABLE agencia(
     id_agencia INT NOT NULL AUTO_INCREMENT,
     nombre_agencia VARCHAR(40) NOT NULL,
     id_pueblo INT(40) NOT NULL,

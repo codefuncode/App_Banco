@@ -51,7 +51,7 @@ function navegacion(argument) {
 	btn_registro_inicio.addEventListener("click", function(argument) {
 		for (var i = 0; i < contenedores.length; i++) {
 
-			if (contenedores[i].classList.contains("registro_inicio")) {
+			if (contenedores[i].classList.contains("panel_de_inicio")) {
 
 				contenedores[i].style.display = "block";
 				//  Llamada al afuncion ubucada en el fichero reguistro_pais.js

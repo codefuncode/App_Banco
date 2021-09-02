@@ -1,11 +1,14 @@
 <?php
+// Instrucciones para insertar un pueblo en la base de datos.
 
+//  Condicional que verifica si existe un valor al momento de la solicitud.
 if (isset($_POST["nombre_pueblo"]) &&
    $_POST['nombre_pueblo'] != "" &&
    isset($_POST['id_pais']) &&
    $_POST['id_pais'] != "" &&
    $_POST['id_pais'] != "inicial") {
 
+//
    $nombre_pueblo = $_POST['nombre_pueblo'];
    $id_pais       = $_POST['id_pais'];
    $id_pais       = (int) $id_pais;

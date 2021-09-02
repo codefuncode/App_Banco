@@ -1,5 +1,5 @@
 <?php
-
+// $_POST['nombre_pais'] = "Italia";
 // Condicional  que detecta  si la variable existe o esta vacía
 if (isset($_POST['nombre_pais']) && $_POST["nombre_pais"] != "") {
    // El valor de la variable global a una variable

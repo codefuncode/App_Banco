@@ -24,7 +24,15 @@ function registro_agencia(argument) {
 			// statement
 		} else {
 			console.log("Perfecto");
+			select_pueblo.disabled = false;
+			console.log(this.value);
+			optener_pueblos(select_pueblo, this.value);
 		}
 	});
+
+	let nombre_agencia = document.querySelector(".registro_agencia input[name=nombre_agencia]");
+	console.log(nombre_agencia);
+	let saldo_inicial = document.querySelector(".registro_agencia input[name=saldo_inicial]");
+	console.log(saldo_inicial);
 
 }
